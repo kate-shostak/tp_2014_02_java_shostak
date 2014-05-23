@@ -12,7 +12,11 @@
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
       </driver-properties>
-      <libraries />
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/../../mysql-connector-java-5.1.29/mysql-connector-java-5.1.29-bin.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

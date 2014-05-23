@@ -13,18 +13,18 @@ public class Randomizer {
     private char letter;
     private StringBuilder stringBuilder;
 
-    public void Randomizer () {
+    public Randomizer() {
         this.random = new Random();
         this.randomString = "abcdefghijklmnopqrstuvwxyz";
-        this.randomChar  =randomString.toCharArray();
+        this.randomChar = randomString.toCharArray();
         this.stringBuilder = new StringBuilder();
     }
 
-   public String getRandomSomething() {
-       for(int i=0; i<10;++i) {
-           letter = randomChar[random.nextInt(randomChar.length)];
-           stringBuilder.append(letter);
-       }
-       return something = stringBuilder.toString();
-   }
+    public String getRandomSomething() {
+        for (int i = 0; i < 10; ++i) {
+            letter = randomChar[random.nextInt(randomChar.length)];
+            stringBuilder.append(letter);
+        }
+        return something = stringBuilder.toString();
+    }
 }

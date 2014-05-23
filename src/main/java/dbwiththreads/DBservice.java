@@ -6,6 +6,7 @@ import messagesystem.MessageManager;
 import messagesystem.TimeHelper;
 
 import java.sql.SQLException;
+//redo not to touch my usersDao
 
 /**
  * Created by kate on 21.04.14.
@@ -24,5 +25,14 @@ public class DBservice implements Abonent {
         return dbAddress;
     }
 
-    
+    public void run() {
+        while (true) {
+            try {
+                messageManager.executeForAbonent(this);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            TimeHelper.sleep(100);
+        }
+    }
 }

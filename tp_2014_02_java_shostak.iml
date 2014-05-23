@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="tapestry" name="Tapestry">
+      <configuration>
+        <setting name="filterName" value="tp_2014_02_java_shostak" />
+        <setting name="applicationPackage" value="com.app" />
+        <setting name="version" value="5.3.6" />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -11,6 +20,24 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../mysql-connector-java-5.1.29/mysql-connector-java-5.1.29-bin.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" scope="TEST">
+      <library>
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.20" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.1.0.M0" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
@@ -21,6 +48,10 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-xml:9.1.0.M0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-servlet:9.1.0.M0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-security:9.1.0.M0" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.mockito:mockito-all:1.8.4" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-rewrite:9.1.0.M0" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-client:9.1.0.M0" level="project" />
   </component>
 </module>
 

@@ -3,6 +3,12 @@ package dbwiththreads;
 /**
  * Created by kate on 25.03.14.
  */
+
+//rk1 pathmap userstatus = enum
+    //DBService - separated
+    //lifehack:if rk=4 +10
+    //
+
 public class UserDataSet {
 
     private Integer id;
