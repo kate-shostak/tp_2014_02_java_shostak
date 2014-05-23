@@ -1,5 +1,6 @@
 package messagesystem;
 
+import dbwiththreads.DBservice;
 import dbwiththreads.UserDataSet;
 import dbwiththreads.UsersDAO;
 import exception.NoSuchUserException;
@@ -21,9 +22,9 @@ public class MessageToRegistrate extends MessageToDataBase {
         this.sessionId = sessionId;
     }
 
-    void execute(UsersDAO dataBaseWithThreads) {
+    void execute(DBservice dataBaseWithThreads) {
         try {
-            dataBaseWithThreads.AddUser(userDataSet);
+            dataBaseWithThreads.usersDAO.AddUser(userDataSet);
             dataBaseWithThreads.getMessageManager().sendMessage(new MessageToUpdateUserStatus(getReciever(), getSender(), sessionId, UserStatus.REGISTERED_OK));
         } catch (SQLException e) {
             e.printStackTrace();

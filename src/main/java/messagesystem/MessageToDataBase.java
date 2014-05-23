@@ -1,5 +1,6 @@
 package messagesystem;
 
+import dbwiththreads.DBservice;
 import dbwiththreads.UsersDAO;
 import interfaces.Abonent;
 
@@ -14,8 +15,8 @@ public abstract class MessageToDataBase extends Message {
     }
 
     void execute(Abonent abonent) throws SQLException {
-        if (abonent instanceof UsersDAO) execute((UsersDAO) abonent);
+        if (abonent instanceof DBservice) execute((DBservice) abonent);
     }
 
-    abstract void execute(UsersDAO dataBaseWithThreads) throws SQLException;
+    abstract void execute(DBservice dataBaseWithThreads) throws SQLException;
 }

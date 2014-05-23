@@ -20,7 +20,7 @@ public class AddressService {
         return frontendWithThreadsAddress;
     }
 
-    public void setDbServiceAddress(UsersDAO dbService) {
+    public void setDbServiceAddress(DBservice dbService) {
         this.dbServiceAddress = dbService.getAddress();
     }
 

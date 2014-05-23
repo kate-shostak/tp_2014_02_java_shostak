@@ -1,5 +1,6 @@
 package redir;
 
+import dbwiththreads.DBservice;
 import dbwiththreads.MyConnector;
 import dbwiththreads.UsersDAO;
 import frontend.FrontendWithThreads;
@@ -27,7 +28,7 @@ public class MainWIthThreads {
 
         MyConnector connector = new MyConnector();
         Connection connection = connector.setConnection();
-        UsersDAO dbService = new UsersDAO(connection, messageManager);
+        DBservice dbService = new DBservice(connection, messageManager);
 
         FrontendWithThreads frontend = new FrontendWithThreads(messageManager);
         (new Thread(frontend)).start();

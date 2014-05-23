@@ -15,30 +15,18 @@ import messagesystem.TimeHelper;
 /**
  * Created by kate on 25.03.14.
  */
-public class UsersDAO implements Abonent, Runnable {
+public class UsersDAO   {
 
     private Connection con;
-    private MessageManager messageManager;
-    private Address dbAddress;
     Executor executor = new Executor();
     String log;
     String pass;
 
-    public UsersDAO(Connection connection, MessageManager messageManager) {
+    public UsersDAO(Connection connection) {
         this.con = connection;
-        this.messageManager = messageManager;
-        this.dbAddress = new Address();
-        messageManager.addService(this);
-        messageManager.getAddressService().setDbServiceAddress(this);
     }
 
-    public Address getAddress() {
-        return dbAddress;
-    }
 
-    public MessageManager getMessageManager() {
-        return messageManager;
-    }
 
     public UserDataSet getById(long id) throws SQLException, NoSuchUserException {
         return executor.execQuery(con, "select * from users where id=" + id, new ResultHandler<UserDataSet>() {
@@ -76,14 +64,4 @@ public class UsersDAO implements Abonent, Runnable {
         }
     }
 
-    public void run() {
-        while (true) {
-            try {
-                messageManager.executeForAbonent(this);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-            TimeHelper.sleep(100);
-        }
-    }
 }

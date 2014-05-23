@@ -73,7 +73,10 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
     private boolean checkSubmittedData(HttpServletRequest request, HttpServletResponse response) {
         if (request.getParameter("login").isEmpty() || request.getParameter("password").isEmpty())
             return true;
-        else return false;
+        else {
+            pageVariables.put("login", request.getParameter("login"));
+            return false;
+        }
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
@@ -282,6 +285,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
 
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
+
         if (checkSubmittedData(request, response)) {
             pageVariables.put("infoText", "Neither of fields should be empty, babes <3.");
             switch (request.getPathInfo()) {
