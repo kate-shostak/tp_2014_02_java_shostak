@@ -2,27 +2,40 @@ package redir;
 
 import dbwiththreads.DBservice;
 import dbwiththreads.MyConnector;
-import dbwiththreads.UsersDAO;
 import frontend.FrontendWithThreads;
 import messagesystem.AddressService;
 import messagesystem.MessageManager;
+import org.eclipse.jetty.rewrite.handler.RedirectRegexRule;
+import org.eclipse.jetty.rewrite.handler.RewriteHandler;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
-import org.eclipse.jetty.rewrite.handler.RedirectRegexRule;
-import org.eclipse.jetty.rewrite.handler.RewriteHandler;
+import resourcesystem.VFS.VFS;
 
-import javax.servlet.Servlet;
 import java.sql.Connection;
+import java.util.Iterator;
 
 /**
  * Created by kate on 19.04.14.
  */
 public class MainWIthThreads {
     public static void main(String[] args) throws Exception {
+
+        VFS vfs = new VFS("");
+        Iterator<String> files = vfs.getIterator("data");
+        while (files.hasNext()){
+            String nextFile = files.next();
+            if (!vfs.isDirectory(nextFile)){
+                resourcesystem.resources.resourceManager.getInstance().addResource(
+                        nextFile,
+                        resourcesystem.resources.resourceManager.getInstance().get(vfs.getAbsolutePath(nextFile))
+                );
+            }
+        }
+
         AddressService addressService = new AddressService();
         MessageManager messageManager = new MessageManager(addressService);
 
@@ -35,7 +48,7 @@ public class MainWIthThreads {
         (new Thread(dbService)).start();
 
 
-        Server server = new Server(8080);
+        Server server = new Server(8081);
 
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);

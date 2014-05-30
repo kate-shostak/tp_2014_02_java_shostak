@@ -1,7 +1,6 @@
 package messagesystem;
 
 import dbwiththreads.DBservice;
-import dbwiththreads.UsersDAO;
 import interfaces.Abonent;
 
 import java.sql.SQLException;

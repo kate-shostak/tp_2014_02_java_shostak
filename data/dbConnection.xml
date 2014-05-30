@@ -1,0 +1,6 @@
+<class type="resourcesystem.resources.dbConnection">
+    <PORT>8080</PORT>
+    <DB>jdbc:mysql://localhost:3306/java_db</DB>
+    <NAME>lady</NAME>
+    <PASSWORD>bird</PASSWORD>
+</class>

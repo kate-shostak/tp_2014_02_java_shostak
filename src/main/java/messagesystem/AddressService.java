@@ -1,9 +1,7 @@
 package messagesystem;
 
 import dbwiththreads.DBservice;
-import dbwiththreads.UsersDAO;
 import frontend.FrontendWithThreads;
-import interfaces.Abonent;
 
 /**
  * Created by kate on 21.04.14.

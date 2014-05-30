@@ -1,9 +1,10 @@
 package frontend;
 
-import dbwiththreads.UsersDAO;
 import dbwiththreads.UserDataSet;
 import interfaces.Abonent;
 import messagesystem.*;
+import resourcesystem.resources.URL;
+import resourcesystem.resources.resourceManager;
 import sessions.UserSession;
 import sessions.UserStatus;
 import templater.PageGenerator;
@@ -16,6 +17,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+
+import static frontend.PathMap.AUTH_PAGE;
 
 /**
  * Created by kate on 19.04.14.
@@ -60,7 +63,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
     }
     */
 
-    public void setUserStatus(String sessionId, int userStatus) {
+    public void setUserStatus(String sessionId, UserStatus userStatus) {
         sessionIdToUserSession.get(sessionId).setUserStatus(userStatus);
     }
 
@@ -80,6 +83,8 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) {
+        /*URL urlRes =(URL) resourceManager.getInstance().getResource("data/urls.xml");
+        public final static String homepage = urlRes.getHOME();*/
         switch (request.getPathInfo()) {
             case PathMap.HOME_PAGE:
                 response.setContentType("text/html;charset=utf-8");
@@ -102,21 +107,21 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                     return;
                 } else {
                     switch (sessionIdToUserSession.get(request.getSession().getId()).getUserStatus()) {
-                        case UserStatus.NOT_AUTHENTICATED_YET:
+                        case NOT_AUTHENTICATED_YET:
                             try {
                                 response.sendRedirect(PathMap.TIMER_PAGE);
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.FRESHER:
+                        case FRESHER:
                             try {
                                 response.sendRedirect(PathMap.TIMER_PAGE);
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.AUTHENTICATED_USER:
+                        case AUTHENTICATED_USER:
 
                             try {
                                 response.sendRedirect(PathMap.TIMER_PAGE);
@@ -124,7 +129,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.NO_SUCH_USER_REGISTERED:
+                        case NO_SUCH_USER_REGISTERED:
                             pageVariables.put("infoText", "User's not been found. Maybe the credentials mistake.try to auth again");
                             try {
                                 setUserStatus(request.getSession().getId(), UserStatus.NOT_AUTHENTICATED_YET);
@@ -133,7 +138,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.REPEATED_LOGIN:
+                        case REPEATED_LOGIN:
                             try {
                                 response.sendRedirect(PathMap.REG_PAGE);
                             } catch (IOException e) {
@@ -156,14 +161,14 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                     return;
                 } else {
                     switch (sessionIdToUserSession.get(request.getSession().getId()).getUserStatus()) {
-                        case UserStatus.AUTHENTICATED_USER:
+                        case AUTHENTICATED_USER:
                             try {
                                 response.sendRedirect(PathMap.TIMER_PAGE);
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.REPEATED_LOGIN:
+                        case REPEATED_LOGIN:
                             pageVariables.put("infoText", "This login is already used. Pick another one.");
                             try {
                                 setUserStatus(request.getSession().getId(), UserStatus.FRESHER);
@@ -172,7 +177,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.FRESHER:
+                        case FRESHER:
                             try {
                                 response.sendRedirect(PathMap.TIMER_PAGE);
 
@@ -181,7 +186,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                             }
                             break;
 
-                        case UserStatus.REGISTERED_OK:
+                        case REGISTERED_OK:
                             pageVariables.put("infoText", "Registration");
                             try {
                                 sendResponse(response, "regform.tml", pageVariables);
@@ -189,7 +194,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                                 e.printStackTrace();
                             }
                             return;
-                        case UserStatus.NOT_AUTHENTICATED_YET:
+                        case NOT_AUTHENTICATED_YET:
                             try {
                                 response.sendRedirect(PathMap.TIMER_PAGE);
 
@@ -205,7 +210,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
             case PathMap.TIMER_PAGE:
                 if (sessionIdToUserSession.get(request.getSession().getId()) == null) {
                     try {
-                        response.sendRedirect(PathMap.AUTH_PAGE);
+                        response.sendRedirect(AUTH_PAGE);
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -213,7 +218,8 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                 } else {
                     //
                     switch (sessionIdToUserSession.get(request.getSession().getId()).getUserStatus()) {
-                        case UserStatus.AUTHENTICATED_USER:
+                        case AUTHENTICATED_USER:
+
                             pageVariables.put("message", "Hello, ");
                             pageVariables.put("userName", sessionIdToUserSession.get(request.getSession().getId()).getUserName());
                             pageVariables.put("userId", sessionIdToUserSession.get(request.getSession().getId()).getUserId());
@@ -226,7 +232,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
 
                             }
                             break;
-                        case UserStatus.NOT_AUTHENTICATED_YET:
+                        case NOT_AUTHENTICATED_YET:
                             pageVariables.put("message", "Hello, Sweety!We're processing your request...");
                             pageVariables.put("userName", ".");
                             pageVariables.put("userId", ".");
@@ -239,14 +245,14 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
 
                             }
                             break;
-                        case UserStatus.REPEATED_LOGIN:
+                        case REPEATED_LOGIN:
                             try {
                                 response.sendRedirect(PathMap.REG_PAGE);
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
                             break;
-                        case UserStatus.NO_SUCH_USER_REGISTERED:
+                        case NO_SUCH_USER_REGISTERED:
                             try {
                                 response.sendRedirect(PathMap.AUTH_PAGE);
                             } catch (IOException e) {
@@ -254,7 +260,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
                             }
                             break;
 
-                        case UserStatus.FRESHER:
+                        case FRESHER:
                             pageVariables.put("message", "Hello, Sweety!We're processing your request...");
                             pageVariables.put("userName", ".");
                             pageVariables.put("userId", ".");
@@ -267,7 +273,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
 
                             }
                             break;
-                        case UserStatus.REGISTERED_OK:
+                        case REGISTERED_OK:
                             try {
                                 setUserStatus(request.getSession().getId(), UserStatus.NO_SUCH_USER_REGISTERED);
                                 response.sendRedirect(PathMap.AUTH_PAGE);
@@ -288,6 +294,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
 
         if (checkSubmittedData(request, response)) {
             pageVariables.put("infoText", "Neither of fields should be empty, babes <3.");
+
             switch (request.getPathInfo()) {
                 case PathMap.AUTH_PAGE:
                     try {
@@ -321,6 +328,7 @@ public class FrontendWithThreads extends HttpServlet implements Abonent, Runnabl
     public void doAuth(HttpServletRequest request, HttpServletResponse response) {
         checkUserSession(request);
         messageManager.sendMessage(new MessageToAuthenticate(this.getAddress(), messageManager.getAddressService().getDbServiceAddressAddress(), request.getParameter("login"), request.getParameter("password"), request.getSession().getId()));
+        sessionIdToUserSession.get(request.getSession().getId()).changeUserName(request.getParameter("login"));
         try {
             response.sendRedirect(PathMap.TIMER_PAGE);
         } catch (IOException e) {

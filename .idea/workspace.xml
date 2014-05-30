@@ -2,26 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4eaaa0b4-d3dc-430c-a772-0e6481aac25c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/ReadXMLFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/ReflectionHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/resources/Resource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/SaxHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/resources/URL.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/VFS/VFS.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/VFS/VFSInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/resources/dbConnection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/dbConnection.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/VFS/fileHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/resourcesystem/resources/resourceManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/urls.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_29.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/db_interaction/Executor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/db_interaction/MyConnector.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/db_interaction/ResultHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/db_interaction/UserDataSet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/db_interaction/UsersDAO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/frontend/Frontend.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/frontend/FrontendWithDataBase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/redir/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/db/AuthenticationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/db/RegistrationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/frontend/RenderingTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/frontend/RoutingTest.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/AddressService.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/AddressService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java" afterPath="$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/ExceptionHandlingMessage.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/ExceptionHandlingMessage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbwiththreads/Executor.java" afterPath="$PROJECT_DIR$/src/main/java/dbwiththreads/Executor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" afterPath="$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java" afterPath="$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/MessageManager.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/MessageManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToDataBase.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToDataBase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToRegistrate.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToRegistrate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserId.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserId.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserStatus.java" afterPath="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java" afterPath="$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/templater/PageGenerator.java" afterPath="$PROJECT_DIR$/src/main/java/templater/PageGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/frontend/PathMap.java" afterPath="$PROJECT_DIR$/src/main/java/frontend/PathMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/interfaces/ResultHandler.java" afterPath="$PROJECT_DIR$/src/main/java/interfaces/ResultHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbwiththreads/UserDataSet.java" afterPath="$PROJECT_DIR$/src/main/java/dbwiththreads/UserDataSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sessions/UserSession.java" afterPath="$PROJECT_DIR$/src/main/java/sessions/UserSession.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/sessions/UserStatus.java" afterPath="$PROJECT_DIR$/src/main/java/sessions/UserStatus.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java" afterPath="$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -78,7 +89,113 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" line="26" class="messagesystem.MessageToAuthenticate" package="messagesystem">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" line="27" class="messagesystem.MessageToAuthenticate" package="messagesystem">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" line="28" class="messagesystem.MessageToAuthenticate" package="messagesystem">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" line="331" class="frontend.FrontendWithThreads" package="frontend">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" line="332" class="frontend.FrontendWithThreads" package="frontend">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" line="221" class="frontend.FrontendWithThreads" package="frontend">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" line="222" class="frontend.FrontendWithThreads" package="frontend">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <method_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -89,57 +206,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DBservice.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java">
+      <file leaf-file-name="dbConnection.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/dbConnection.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="5" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="882">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageToRegistrate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToRegistrate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="60" selection-start="798" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="612">
+            <state line="5" column="8" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageToUpdateUserId.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserId.java">
+      <file leaf-file-name="urls.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/urls.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="63" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="1" column="15" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageToUpdateUserStatus.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserStatus.java">
+      <file leaf-file-name="URL.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/resources/URL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="41" selection-start="553" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+            <state line="7" column="11" selection-start="118" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageToDataBase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToDataBase.java">
+      <file leaf-file-name="PathMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/frontend/PathMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="35" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+            <state line="10" column="30" selection-start="148" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageToAuthenticate.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java">
+      <file leaf-file-name="MyConnector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="711" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="666">
+            <state line="25" column="106" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -148,25 +254,30 @@
       <file leaf-file-name="FrontendWithThreads.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="136" column="33" selection-start="5794" selection-end="5794" vertical-scroll-proportion="4.167315" vertical-offset="0" max-vertical-offset="6174">
+            <state line="87" column="37" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.67447305" vertical-offset="918" max-vertical-offset="6264">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageManager.java">
+      <file leaf-file-name="dbConnection.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/resources/dbConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="54" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="792">
-              <folding />
+            <state line="28" column="25" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+              <folding>
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/Message.java">
+      <file leaf-file-name="MainWIthThreads.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="21" selection-start="383" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="522">
+            <state line="57" column="20" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="1278">
               <folding />
             </state>
           </provider>
@@ -185,21 +296,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/Interfaces/ResultHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Interfaces/Abonent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interfaces/ResultHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/interfaces/MessageSystemInteraction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/AdressService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sessions/UserSesson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exeptions/EmptyPageVariablesExeption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exeptions/EmptyPageVariablesException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/TimeHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/exeptions/WrongDataExeption.java" />
-        <option value="$PROJECT_DIR$/tml/authform.tml" />
-        <option value="$PROJECT_DIR$/tml/waitpage.tml" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/AddressService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadCase/templater/PageGenerator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ThreadCase/temlater/templater/PageGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ThreadCase/temlater/PageGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/ThreadCase/frontendwiththreads/FrontendWithThreads.java" />
         <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageManager.java" />
@@ -210,31 +306,46 @@
         <option value="$PROJECT_DIR$/src/main/java/exception/RepeatLoginExeption.java" />
         <option value="$PROJECT_DIR$/src/main/java/messagesystem/ExceptionHAndlingMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToFrontend.java" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/ExceptionHandlingMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/exception/RepeatedLoginException.java" />
         <option value="$PROJECT_DIR$/tml/index.tml" />
         <option value="$PROJECT_DIR$/tml/regform.tml" />
-        <option value="$PROJECT_DIR$/src/main/java/sessions/UserSession.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/Executor.java" />
         <option value="$PROJECT_DIR$/src/main/java/exception/NoSuchUserException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserId.java" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserStatus.java" />
         <option value="$PROJECT_DIR$/src/test/java/Randomizer.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontend/RoutingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/sessions/Randomizer.java" />
         <option value="$PROJECT_DIR$/src/test/java/frontendwiththreads/RoutingTest.java" />
         <option value="$PROJECT_DIR$/tml/timer.tml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/sessions/UserStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/frontend/PathMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/UserDataSet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" />
         <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java" />
         <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToDataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/Executor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interfaces/ResultHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sessions/UserStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/messagesystem/ExceptionHandlingMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToRegistrate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sessions/UserSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/VFS/VFSInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/VFS/fileHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/VFS/VFS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/ReflectionHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/ReadXMLFileSax.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/ReadXMLFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/SaxHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/resources/resourceManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/resources/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/redir/PathMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/frontend/PathMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/resources/dbConnection.java" />
+        <option value="$PROJECT_DIR$/data/dbConnection.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java" />
+        <option value="$PROJECT_DIR$/data/urls.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/resourcesystem/resources/URL.java" />
         <option value="$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java" />
       </list>
     </option>
@@ -260,7 +371,7 @@
     <option name="x" value="65" />
     <option name="y" value="24" />
     <option name="width" value="1375" />
-    <option name="height" value="876" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -360,40 +471,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontendwiththreads" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -410,6 +487,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,7 +516,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templater" />
+              <option name="myItemId" value="resourcesystem" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -461,7 +542,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sessions" />
+              <option name="myItemId" value="resourcesystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,85 +598,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="messagesystem" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tp_2014_02_java_shostak" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exception" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,8 +628,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tp_2014_02_java_shostak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tp_2014_02_java_shostak" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="TapestryProjectView" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -637,7 +659,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="TapestryProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -682,6 +703,9 @@
       <recent name="$PROJECT_DIR$/src/main/java/interfaces" />
       <recent name="$PROJECT_DIR$/src/main/java/dbwiththreads" />
       <recent name="$PROJECT_DIR$/static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/resourcesystem/VFS" />
     </key>
   </component>
   <component name="RunManager" selected="Application.MainWIthThreads">
@@ -1286,12 +1310,16 @@
       <workItem from="1400868203130" duration="1288000" />
       <workItem from="1400871899824" duration="477000" />
       <workItem from="1400872424980" duration="593000" />
-      <workItem from="1400873083724" duration="5820000" />
+      <workItem from="1400873083724" duration="16066000" />
+      <workItem from="1401193324577" duration="633000" />
+      <workItem from="1401474113603" duration="1568000" />
+      <workItem from="1401482746861" duration="6607000" />
+      <workItem from="1401489444278" duration="1334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240768000" />
+    <option name="totallyTimeSpent" value="261156000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1314,7 +1342,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1375" height="876" extended-state="6" />
+    <frame x="65" y="24" width="1375" height="850" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1324,11 +1352,11 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20855214" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42839506" sideWeight="0.49963635" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4280397" sideWeight="0.5018811" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Tapestry" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41485274" sideWeight="0.49454546" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30148885" sideWeight="0.49435666" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32754344" sideWeight="0.49963635" order="12" side_tool="false" content_ui="tabs" />
@@ -1337,14 +1365,43 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16579145" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2513168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20967741" sideWeight="0.50545454" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2979684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3653846" sideWeight="0.5048909" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35394737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35359803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20855214" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Tapestry" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30148885" sideWeight="0.49435666" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2979684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30148885" sideWeight="0.5048909" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298153" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35359803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4280397" sideWeight="0.5018811" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32754344" sideWeight="0.49963635" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16579145" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1367,327 +1424,292 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="47" selection-start="1917" selection-end="1917" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1314">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1620">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1276#1686#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="41" selection-start="1079" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="522" max-vertical-offset="1044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exception/NoSuchUserException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.32374102" vertical-offset="0" max-vertical-offset="417" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/exception/RepeatedLoginException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="128" selection-end="150" vertical-scroll-proportion="0.21582733" vertical-offset="0" max-vertical-offset="417" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.1.0.M0/jetty-servlet-9.1.0.M0.jar!/org/eclipse/jetty/servlet/ServletHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="16" selection-start="4780" selection-end="4780" vertical-scroll-proportion="-5.68" vertical-offset="1358" max-vertical-offset="2445" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.1.0.M0/jetty-servlet-9.1.0.M0.jar!/org/eclipse/jetty/servlet/ServletHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="16" selection-start="3925" selection-end="3925" vertical-scroll-proportion="-5.36" vertical-offset="826" max-vertical-offset="2775" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/session/SessionHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="16" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-7.12" vertical-offset="197" max-vertical-offset="600" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/ContextHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="16" selection-start="8303" selection-end="8303" vertical-scroll-proportion="-5.36" vertical-offset="1996" max-vertical-offset="7065" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/ScopedHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="22" selection-start="1780" selection-end="1780" vertical-scroll-proportion="-10.84" vertical-offset="59" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/HandlerList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="16" selection-start="314" selection-end="314" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="225" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="831" selection-end="831" vertical-scroll-proportion="-8.44" vertical-offset="59" max-vertical-offset="465" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/Server.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="16" selection-start="3464" selection-end="3464" vertical-scroll-proportion="-5.4" vertical-offset="855" max-vertical-offset="1455" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/HttpChannel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="19" selection-start="5255" selection-end="5255" vertical-scroll-proportion="-5.4" vertical-offset="1455" max-vertical-offset="1965" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/HttpConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="16" selection-start="3296" selection-end="3296" vertical-scroll-proportion="-5.4" vertical-offset="795" max-vertical-offset="1575" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/AbstractConnection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2490" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.1.0.M0/jetty-util-9.1.0.M0.jar!/org/eclipse/jetty/util/thread/QueuedThreadPool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="2526" selection-end="2526" vertical-scroll-proportion="0.48387095" vertical-offset="405" max-vertical-offset="1740" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tml/index.tml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="80" selection-end="80" vertical-scroll-proportion="0.05913272" vertical-offset="0" max-vertical-offset="761" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sessions/Randomizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="10" selection-start="309" selection-end="309" vertical-scroll-proportion="0.3549107" vertical-offset="66" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.33170733" vertical-offset="644" max-vertical-offset="1905" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="388" selection-end="388" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="255" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.6" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/RunBefores.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="616" selection-end="616" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="285" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.35053763" vertical-offset="482" max-vertical-offset="1080" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="504" selection-end="504" vertical-scroll-proportion="0.33264887" vertical-offset="18" max-vertical-offset="675" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="21" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.8226691" vertical-offset="210" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tml/timer.tml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="35" selection-start="549" selection-end="555" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/PathMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sessions/UserStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="95" selection-end="95" vertical-scroll-proportion="0.17142858" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sessions/UserSession.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="25" selection-start="697" selection-end="707" vertical-scroll-proportion="0.6857143" vertical-offset="30" max-vertical-offset="555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/UserDataSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/frontendwiththreads/RenderingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="26" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/frontendwiththreads/RoutingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="0" selection-start="5780" selection-end="5780" vertical-scroll-proportion="0.6369427" vertical-offset="1360" max-vertical-offset="2145">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="58" selection-start="935" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/AddressService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="44" selection-start="546" selection-end="546" vertical-scroll-proportion="0.0" vertical-offset="35" max-vertical-offset="522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/ExceptionHandlingMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="48" selection-start="1493" selection-end="1493" vertical-scroll-proportion="0.0" vertical-offset="446" max-vertical-offset="1260">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1276#1686#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToFrontend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="22" selection-start="151" selection-end="151" vertical-scroll-proportion="0.2587269" vertical-offset="0" max-vertical-offset="487">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="671" selection-end="676" vertical-scroll-proportion="0.4308617" vertical-offset="73" max-vertical-offset="576">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="383" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="54" selection-start="838" selection-end="838" vertical-scroll-proportion="0.0" vertical-offset="98" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="5" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="106" max-vertical-offset="882">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToDataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="35" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="63" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="711" selection-end="730" vertical-scroll-proportion="0.0" vertical-offset="122" max-vertical-offset="666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToRegistrate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="60" selection-start="798" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="612">
+        <state line="12" column="5" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToUpdateUserStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="41" selection-start="553" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+        <state line="14" column="35" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToAuthenticate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1345" selection-end="1345" vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageToDataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/MessageManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.0" vertical-offset="411" max-vertical-offset="792" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/messagesystem/TimeHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0" vertical-offset="89" max-vertical-offset="504" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk/jdk1.7.0_51/src.zip!/java/util/concurrent/atomic/AtomicReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="0" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="2304" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk/jdk1.7.0_51/src.zip!/java/nio/channels/spi/AbstractInterruptibleChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="0" selection-start="4304" selection-end="4304" vertical-scroll-proportion="0.3128079" vertical-offset="1763" max-vertical-offset="3366" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk/jdk1.7.0_51/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="1933" selection-end="1933" vertical-scroll-proportion="0.29466358" vertical-offset="863" max-vertical-offset="4284" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/IdleTimeout.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="19" selection-start="1105" selection-end="1105" vertical-scroll-proportion="0.40458015" vertical-offset="363" max-vertical-offset="756" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.1.0.M0/jetty-util-9.1.0.M0.jar!/org/eclipse/jetty/util/log/StdErrLog.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="16" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.33333334" vertical-offset="1309" max-vertical-offset="2034" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/ChannelEndPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="22" selection-start="1506" selection-end="1506" vertical-scroll-proportion="-10.68" vertical-offset="417" max-vertical-offset="810" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/SelectChannelEndPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="19" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.5298913" vertical-offset="291" max-vertical-offset="684" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/AbstractEndPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="16" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.33333334" vertical-offset="445" max-vertical-offset="954" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/AbstractConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2988" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.1.0.M0/jetty-util-9.1.0.M0.jar!/org/eclipse/jetty/util/thread/QueuedThreadPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2088" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-io/9.1.0.M0/jetty-io-9.1.0.M0.jar!/org/eclipse/jetty/io/FillInterest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="21" selection-start="435" selection-end="435" vertical-scroll-proportion="0.35368958" vertical-offset="59" max-vertical-offset="540" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.1.0.M0/jetty-servlet-9.1.0.M0.jar!/org/eclipse/jetty/servlet/ServletHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="16" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.35368958" vertical-offset="1661" max-vertical-offset="2934" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/templater/PageGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.6519722" vertical-offset="7" max-vertical-offset="540" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.1.0.M0/jetty-servlet-9.1.0.M0.jar!/org/eclipse/jetty/servlet/ServletHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="16" selection-start="3925" selection-end="3925" vertical-scroll-proportion="-5.24" vertical-offset="1021" max-vertical-offset="3330" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/session/SessionHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="16" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-5.24" vertical-offset="319" max-vertical-offset="720" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/ContextHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="16" selection-start="8303" selection-end="8303" vertical-scroll-proportion="-5.24" vertical-offset="2425" max-vertical-offset="8478" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/ScopedHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="22" selection-start="1780" selection-end="1780" vertical-scroll-proportion="-10.24" vertical-offset="140" max-vertical-offset="558" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/HandlerList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="16" selection-start="314" selection-end="314" vertical-scroll-proportion="-5.76" vertical-offset="0" max-vertical-offset="270" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/handler/HandlerWrapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="16" selection-start="831" selection-end="831" vertical-scroll-proportion="-6.36" vertical-offset="165" max-vertical-offset="558" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/Server.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="16" selection-start="3464" selection-end="3464" vertical-scroll-proportion="0.33333334" vertical-offset="1057" max-vertical-offset="1746" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/HttpChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="19" selection-start="5255" selection-end="5255" vertical-scroll-proportion="0.33333334" vertical-offset="1777" max-vertical-offset="2358" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-server/9.1.0.M0/jetty-server-9.1.0.M0.jar!/org/eclipse/jetty/server/HttpConnection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="16" selection-start="3296" selection-end="3296" vertical-scroll-proportion="0.33333334" vertical-offset="985" max-vertical-offset="1890" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sessions/UserSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="187" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="127" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sessions/UserStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/DBservice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="37" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0" vertical-offset="48" max-vertical-offset="774" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="77" selection-start="300" selection-end="313" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/VFS/VFSInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="0" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="751" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/UsersDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="162" selection-end="179" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1062" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/VFS/VFS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="0" selection-start="1599" selection-end="1599" vertical-scroll-proportion="-13.833333" vertical-offset="845" max-vertical-offset="1566" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/VFS/fileHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/UserDataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="24" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="774" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../jdk/jdk1.7.0_51/src.zip!/javax/xml/parsers/SAXParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="0" selection-start="9803" selection-end="9803" vertical-scroll-proportion="0.31730768" vertical-offset="4101" max-vertical-offset="9450" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/resources/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="91" selection-end="91" vertical-scroll-proportion="0.16885553" vertical-offset="0" max-vertical-offset="533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/ReadXMLFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/resources/resourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/ReflectionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="276" max-vertical-offset="828">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/SaxHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/resources/dbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="25" selection-start="477" selection-end="477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding>
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dbwiththreads/MyConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="106" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dbConnection.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="8" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/redir/MainWIthThreads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="20" selection-start="2091" selection-end="2091" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="1278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/frontend/PathMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="30" selection-start="148" selection-end="174" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/resourcesystem/resources/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="11" selection-start="118" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/urls.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="15" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/frontend/FrontendWithThreads.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="33" selection-start="5794" selection-end="5794" vertical-scroll-proportion="4.167315" vertical-offset="0" max-vertical-offset="6174">
+        <state line="87" column="37" selection-start="3356" selection-end="3356" vertical-scroll-proportion="0.67447305" vertical-offset="918" max-vertical-offset="6264">
           <folding />
         </state>
       </provider>

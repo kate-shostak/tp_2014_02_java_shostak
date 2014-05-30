@@ -1,19 +1,18 @@
 package dbwiththreads;
 
-import java.sql.Statement;
+import interfaces.ResultHandler;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import exception.NoSuchUserException;
-import interfaces.ResultHandler;
+import java.sql.Statement;
 
 /**
  * Created by kate on 25.03.14.
  */
 public class Executor {
 
-    public <T> T execQuery(Connection connection, String query, ResultHandler<T> handler) throws SQLException, NoSuchUserException {
+    public <T> T execQuery(Connection connection, String query, ResultHandler<T> handler) throws SQLException {
         Statement statement = connection.createStatement();
         statement.execute(query);
         ResultSet resultSet = statement.getResultSet();

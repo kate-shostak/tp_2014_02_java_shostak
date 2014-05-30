@@ -1,12 +1,10 @@
 package sessions;
 
-import javax.servlet.http.HttpSession;
-
 /**
  * Created by kate on 19.04.14.
  */
 public class UserSession {
-    private int userStatus;
+    UserStatus userStatus;
     private long userId;
     private String sessionId;
     private String login;
@@ -16,6 +14,10 @@ public class UserSession {
         this.login = login;
         this.userId = -1;
         this.userStatus = UserStatus.NOT_AUTHENTICATED_YET;
+    }
+
+    public void changeUserName(String login) {
+        this.login = login;
     }
 
     public String getUserName() {
@@ -30,7 +32,7 @@ public class UserSession {
         return userId;
     }
 
-    public int getUserStatus() {
+    public UserStatus getUserStatus() {
         return userStatus;
     }
 
@@ -38,7 +40,7 @@ public class UserSession {
         this.userId = userId;
     }
 
-    public void setUserStatus(int userStatus) {
+    public void setUserStatus(UserStatus userStatus) {
         this.userStatus = userStatus;
     }
 }

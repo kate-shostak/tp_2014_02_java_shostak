@@ -1,23 +1,18 @@
 package dbwiththreads;
 
+import interfaces.ResultHandler;
+
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import exception.NoSuchUserException;
-import exception.RepeatedLoginException;
-import interfaces.Abonent;
-import interfaces.ResultHandler;
-import messagesystem.Address;
-import messagesystem.MessageManager;
-import messagesystem.TimeHelper;
-
 /**
  * Created by kate on 25.03.14.
  */
-public class UsersDAO   {
+public class UsersDAO {
 
     private Connection con;
+    private UserDataSet userDataSet;
     Executor executor = new Executor();
     String log;
     String pass;
@@ -27,8 +22,7 @@ public class UsersDAO   {
     }
 
 
-
-    public UserDataSet getById(long id) throws SQLException, NoSuchUserException {
+    public UserDataSet getById(long id) throws SQLException {
         return executor.execQuery(con, "select * from users where id=" + id, new ResultHandler<UserDataSet>() {
             public UserDataSet handle(ResultSet result) throws SQLException {
                 result.next();
@@ -38,13 +32,13 @@ public class UsersDAO   {
     }
 
     //HANDLE PASSWORDS WITH REAL CRYPTO-METHODS.
-    public UserDataSet getBylogin(String login) throws SQLException, NoSuchUserException {
+    public UserDataSet getBylogin(String login) throws SQLException {
         return executor.execQuery(con, "select * from users where login=" + "'" + login + "'", new ResultHandler<UserDataSet>() {
-            public UserDataSet handle(ResultSet result) throws SQLException, NoSuchUserException {
+            public UserDataSet handle(ResultSet result) throws SQLException {
                 if (result.next())
                     return new UserDataSet(result.getInt(1), result.getString(2), result.getString(3));
                 else {
-                    throw new NoSuchUserException("No such user in DB");
+                    return null;
                 }
             }
         });
@@ -53,14 +47,15 @@ public class UsersDAO   {
 
     //should we better use exceptions or just logical interlation..
     //enum
-    public void AddUser(UserDataSet newUser) throws SQLException, RepeatedLoginException {
+    public boolean AddUser(UserDataSet newUser) throws SQLException {
         log = newUser.getLogin();
         pass = newUser.getPassword();
-        try {
-            getBylogin(log);
-            throw new RepeatedLoginException(log);
-        } catch (NoSuchUserException e) {
+        userDataSet = getBylogin(log);
+        if (userDataSet != null) {
+            return false;
+        } else {
             executor.execUpdate(con, "insert into users (login, password) values (" + "'" + log + "'" + "," + "'" + pass + "'" + ")");
+            return true;
         }
     }
 

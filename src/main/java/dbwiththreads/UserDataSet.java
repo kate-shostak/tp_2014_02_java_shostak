@@ -5,9 +5,9 @@ package dbwiththreads;
  */
 
 //rk1 pathmap userstatus = enum
-    //DBService - separated
-    //lifehack:if rk=4 +10
-    //
+//DBService - separated
+//lifehack:if rk=4 +10
+//
 
 public class UserDataSet {
 

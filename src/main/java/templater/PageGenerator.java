@@ -7,8 +7,8 @@ import freemarker.template.TemplateException;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
-import java.util.Map;
 import java.io.Writer;
+import java.util.Map;
 
 /**
  * Created by kate on 17.03.14.

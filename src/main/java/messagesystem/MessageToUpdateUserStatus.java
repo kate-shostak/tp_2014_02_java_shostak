@@ -1,16 +1,16 @@
 package messagesystem;
 
-import dbwiththreads.UsersDAO;
 import frontend.FrontendWithThreads;
+import sessions.UserStatus;
 
 /**
  * Created by kate on 25.04.14.
  */
 public class MessageToUpdateUserStatus extends MessageToFrontend {
-    int userStatus;
+    UserStatus userStatus;
     String sessionId;
 
-    MessageToUpdateUserStatus(Address recievedFrom, Address sendTo, String sessionId, int userStatus) {
+    MessageToUpdateUserStatus(Address recievedFrom, Address sendTo, String sessionId, UserStatus userStatus) {
         super(recievedFrom, sendTo);
         this.sessionId = sessionId;
         this.userStatus = userStatus;

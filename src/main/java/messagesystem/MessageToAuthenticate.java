@@ -2,8 +2,6 @@ package messagesystem;
 
 import dbwiththreads.DBservice;
 import dbwiththreads.UserDataSet;
-import dbwiththreads.UsersDAO;
-import exception.NoSuchUserException;
 import sessions.UserStatus;
 
 import java.sql.SQLException;
@@ -27,11 +25,15 @@ public class MessageToAuthenticate extends MessageToDataBase {
         UserDataSet result;
         try {
             result = dataBaseWithThreads.usersDAO.getBylogin(userDataSet.getLogin());
-            dataBaseWithThreads.getMessageManager().sendMessage(new MessageToUpdateUserId(getReciever(), getSender(), result, sessionId, UserStatus.AUTHENTICATED_USER));
+            if (result != null &&  result.getPassword().equals(userDataSet.getPassword())) {
+                dataBaseWithThreads.getMessageManager().sendMessage(new MessageToUpdateUserId(getReciever(), getSender(), result, sessionId, UserStatus.AUTHENTICATED_USER));
+            }
+            else
+                dataBaseWithThreads.getMessageManager().sendMessage(new ExceptionHandlingMessage(getReciever(), getSender(), UserStatus.NO_SUCH_USER_REGISTERED, sessionId));
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (NoSuchUserException e) {
-            dataBaseWithThreads.getMessageManager().sendMessage(new ExceptionHandlingMessage(getReciever(), getSender(), UserStatus.NO_SUCH_USER_REGISTERED, sessionId));
+
+
         }
     }
 }

@@ -1,12 +1,12 @@
 package messagesystem;
 
+import interfaces.Abonent;
+
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
-
-import interfaces.Abonent;
 
 /**
  * Created by kate on 19.04.14.

@@ -1,0 +1,8 @@
+<class type="resourcesystem.resources.URL">
+    <HOME>/home</HOME>
+    <LOGIN>/login</LOGIN>
+    <REGISTER>/register</REGISTER>
+    <AUTHFORM>/index</AUTHFORM>
+    <TIMER_PAGE>/timer</TIMER_PAGE>
+    <REGISTRATION_FORM>/registration</REGISTRATION_FORM>
+</class>

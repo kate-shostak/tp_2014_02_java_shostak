@@ -2,7 +2,7 @@ package messagesystem;
 
 import dbwiththreads.UserDataSet;
 import frontend.FrontendWithThreads;
-import interfaces.Abonent;
+import sessions.UserStatus;
 
 /**
  * Created by kate on 21.04.14.
@@ -10,9 +10,9 @@ import interfaces.Abonent;
 public class MessageToUpdateUserId extends MessageToFrontend {
     private UserDataSet result;
     private String sessionId;
-    private int userStatus;
+    UserStatus userStatus;
 
-    public MessageToUpdateUserId(Address receivedFrom, Address sendTo, UserDataSet result, String sessionId, int userStatus) {
+    public MessageToUpdateUserId(Address receivedFrom, Address sendTo, UserDataSet result, String sessionId, UserStatus userStatus) {
         super(receivedFrom, sendTo);
         this.result = result;
         this.sessionId = sessionId;
